@@ -3,90 +3,340 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bhanu Prasad Thota</title>
+  <meta name="description" content="Bhanu Prasad Thota — Machine Learning Engineer with 6+ years experience in LLMs, RAG pipelines, computer vision, and production ML systems." />
+  <meta property="og:title" content="Bhanu Prasad Thota — ML Engineer" />
+  <meta property="og:description" content="Machine Learning Engineer specializing in LLMs, RAG, computer vision, and AI agents." />
+  <meta property="og:type" content="website" />
+  <title>Bhanu Prasad Thota — ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Bhanu Prasad Thota</h1>
-    <p>Machine Learning Engineer | 6+ Years of Experience | MS in Data Science</p>
-    <nav>
+
+  <!-- NAV -->
+  <nav class="topnav">
+    <span class="nav-brand">BPT</span>
+    <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/profile.jpg" alt="Bhanu Prasad Thota" class="hero-img" />
+      <div class="hero-text">
+        <h1>Bhanu Prasad Thota</h1>
+        <p class="hero-tagline">Machine Learning Engineer &nbsp;·&nbsp; 6+ Years Experience &nbsp;·&nbsp; MS Data Science</p>
+        <p class="hero-sub">
+          Building production-grade AI systems — LLMs, RAG pipelines, computer vision, and intelligent agents.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:bhanuprasadt27@gmail.com" class="btn btn-primary">Get in Touch</a>
+          <a href="https://github.com/bhanuprasadthota" target="_blank" class="btn btn-outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/bhanu-prasad-thota-a12018146/" target="_blank" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section id="about" class="profile">
-      <img src="assets/profile.jpg" alt="Bhanu Prasad Thota" class="profile-img" />
-      <div>
-        <h2>About Me</h2>
-        <p>
-          I'm Bhanu, a Machine Learning Engineer with over 6 years of experience building AI-powered solutions, backend systems, and production-ready ML pipelines.
-          I’ve worked with LLMs, vector search (Pinecone), SageMaker, Vertex AI, Flask, PySpark, and Dockerized microservices across companies in the US and India.
-        </p>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm Bhanu — a Machine Learning Engineer with 6+ years of experience building AI-powered products across the US and India.
+        My work spans LLM-based chatbots with long-term memory, scalable RAG pipelines on Vertex AI and SageMaker, real-time computer vision systems, and open-source ML libraries.
+      </p>
+      <p>
+        I hold an MS in Data Science from UMass Dartmouth (GPA 3.97) and a background in software engineering from Netcracker Technology, where I built ETL pipelines, churn prediction models, and Dockerized microservices at scale.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>ML / AI</h3>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">Gemini AI</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">RAG</span>
+            <span class="tag">YOLO</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Cloud & Infrastructure</h3>
+          <div class="tags">
+            <span class="tag">AWS SageMaker</span>
+            <span class="tag">GCP Vertex AI</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data & Databases</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">PySpark</span>
+            <span class="tag">Pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Frameworks & Tools</h3>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">Electron</span>
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>LLM Customer Support Agent:</strong> Built an AI chatbot with memory using Hugging Face, Pinecone, and LangChain.</li>
-        <li><strong>ICE Track:</strong> Civic tech tool with Mapbox + Supabase to track and visualize ICE arrests in Massachusetts.</li>
-        <li><strong>Resumate:</strong> Smart resume builder using OpenAI + Flask + PostgreSQL with user-friendly profile management.</li>
-        <li><strong>3D Pose Estimation:</strong> Built a real-time system using VIBE + SMPL-X + YOLO for motion analysis and avatar generation.</li>
-      </ul>
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <h3>AskDB</h3>
+            <a href="https://github.com/bhanuprasadthota/AskDB" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>Open-source Python library that converts natural language questions to SQL — no SQL knowledge required. Multi-database support (SQLite, PostgreSQL, MySQL, MongoDB) with a fine-tuned T5 model and fuzzy column matching.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">NLP</span><span class="tag">Text-to-SQL</span><span class="tag">Transformers</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>AgentAtlas</h3>
+            <a href="https://github.com/bhanuprasadthota/agentatlas" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>Shared browser interaction schema registry for AI agents. Reduces LLM token usage by 80–100% on known sites by caching and sharing interaction schemas across agents.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">AI Agents</span><span class="tag">Playwright</span><span class="tag">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Handwritten Notes Digitizer</h3>
+            <a href="https://github.com/bhanuprasadthota/handwritten-notes-digitizer" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>End-to-end pipeline converting scanned handwritten notes to structured PDFs using Gemini Vision AI. Features OCR, diagram detection, content enrichment, and LaTeX-quality PDF output. Capstone — Google GenAI Intensive 2025.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Gemini AI</span><span class="tag">OCR</span><span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Conductor</h3>
+            <a href="https://github.com/bhanuprasadthota/conductor" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>Desktop automation and AI agent orchestration platform built with Electron, TypeScript, LangChain, and Playwright. Coordinates agents, workflows, and local state in a modular desktop environment.</p>
+          <div class="tags">
+            <span class="tag">TypeScript</span><span class="tag">Electron</span><span class="tag">LangChain</span><span class="tag">Playwright</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Stop Sign Detection</h3>
+            <a href="https://github.com/bhanuprasadthota/Stop-Sign-Detection-in-Dash-Camera-Footage" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>Real-time stop sign detection in dash camera footage using YOLOv3 and OpenCV. Includes a Tkinter GUI with audible alerts on detection.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Accelerated Road Sign Detection</h3>
+            <a href="https://github.com/bhanuprasadthota/Accelerated-Road-Sign-Detection-for-Autonomous-Driving" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+          <p>CNN-based road sign detector for autonomous driving with parallel computing acceleration. Benchmarks serial vs. parallel execution with strong scaling analysis across multiple workers.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Parallel Computing</span><span class="tag">CV</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience">
-      <h2>Work Experience</h2>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
 
-      <h3>CentryStone, GA — Machine Learning Engineer</h3>
-      <p><em>Nov 2024 – Present</em></p>
-      <ul>
-        <li>Built LLM chatbots with long-term memory using Hugging Face and Pinecone.</li>
-        <li>Deployed scalable RAG pipelines on Vertex AI & SageMaker, reducing latency by 40%.</li>
-        <li>Developed voice AI bots automating 70% of customer queries.</li>
-      </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Machine Learning Engineer</h3>
+              <span class="timeline-date">Nov 2024 – Present</span>
+            </div>
+            <p class="timeline-company">CentryStone &nbsp;·&nbsp; Atlanta, GA</p>
+            <ul>
+              <li>Built LLM chatbots with long-term memory using Hugging Face and Pinecone vector search.</li>
+              <li>Deployed scalable RAG pipelines on Vertex AI and SageMaker, reducing inference latency by 40%.</li>
+              <li>Developed voice AI bots automating 70% of customer support queries end-to-end.</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>UMassD, MA — Research & ML Engineer</h3>
-      <p><em>Jan 2024 – Dec 2024</em></p>
-      <ul>
-        <li>3D mesh generation from videos using VIBE, YOLO, SMPL-X.</li>
-        <li>Enhanced transformers for efficient training on multimodal datasets.</li>
-        <li>Improved video motion analytics using RNN-based frame prediction.</li>
-      </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Research &amp; ML Engineer</h3>
+              <span class="timeline-date">Jan 2024 – Dec 2024</span>
+            </div>
+            <p class="timeline-company">UMass Dartmouth &nbsp;·&nbsp; North Dartmouth, MA</p>
+            <ul>
+              <li>Built 3D mesh generation pipeline from video using VIBE, YOLO, and SMPL-X.</li>
+              <li>Enhanced transformer architectures for efficient multimodal dataset training.</li>
+              <li>Improved video motion analytics with RNN-based frame prediction models.</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Netcracker Technology, Hyderabad — Sr. Software Engineer → Assoc. Software Engineer</h3>
-      <p><em>Jul 2018 – Dec 2022</em></p>
-      <ul>
-        <li>Built Flask-based APIs, ETL pipelines using PySpark, and churn prediction models.</li>
-        <li>Containerized services using Docker & Kubernetes; automated CI/CD using GitHub Actions.</li>
-        <li>Worked on Snowflake models and BI reporting for telecom systems.</li>
-      </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Sr. Software Engineer → Assoc. Software Engineer</h3>
+              <span class="timeline-date">Jul 2018 – Dec 2022</span>
+            </div>
+            <p class="timeline-company">Netcracker Technology &nbsp;·&nbsp; Hyderabad, India</p>
+            <ul>
+              <li>Built Flask-based REST APIs and ETL pipelines using PySpark for telecom data processing.</li>
+              <li>Developed customer churn prediction models deployed to production.</li>
+              <li>Containerized microservices with Docker and Kubernetes; automated CI/CD via GitHub Actions.</li>
+              <li>Built Snowflake data models and BI dashboards for reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MS in Data Science</strong> — UMass Dartmouth (GPA: 3.97) | 2023–2024</li>
-        <li><strong>BE in Mechanical Engineering</strong> — Vasavi College (OU) (GPA: 3.53) | 2014–2018</li>
-      </ul>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-degree">MS in Data Science</div>
+          <div class="edu-school">University of Massachusetts Dartmouth</div>
+          <div class="edu-meta">
+            <span class="tag">GPA: 3.97 / 4.0</span>
+            <span class="tag">2023 – 2024</span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">BE in Mechanical Engineering</div>
+          <div class="edu-school">Vasavi College of Engineering, Osmania University</div>
+          <div class="edu-meta">
+            <span class="tag">GPA: 3.53 / 4.0</span>
+            <span class="tag">2014 – 2018</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:bhanuprasadt27@gmail.com">bhanuprasadt27@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/bhanuprasadthota" target="_blank">bhanuprasadthota</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/bhanu-prasad-thota-a12018146/" target="_blank">linkedin.com/in/bhanu-prasad-thota</a></p>
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Open to full-time ML engineering roles and interesting collaborations.</p>
+      <div class="contact-links">
+        <a href="mailto:bhanuprasadt27@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          bhanuprasadt27@gmail.com
+        </a>
+        <a href="https://github.com/bhanuprasadthota" target="_blank" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          github.com/bhanuprasadthota
+        </a>
+        <a href="https://www.linkedin.com/in/bhanu-prasad-thota-a12018146/" target="_blank" class="contact-item">
+          <span class="contact-icon">in</span>
+          linkedin.com/in/bhanu-prasad-thota
+        </a>
+      </div>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2025 Bhanu Prasad Thota</p>
+    <p>© 2026 Bhanu Prasad Thota &nbsp;·&nbsp; Built with HTML &amp; CSS &nbsp;·&nbsp;
+      <a href="https://github.com/bhanuprasadthota/bhanuprasadthota.github.io" target="_blank">Source</a>
+    </p>
   </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section, header');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
 </body>
 </html>
