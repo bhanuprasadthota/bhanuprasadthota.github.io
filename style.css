@@ -410,6 +410,72 @@ footer a { color: rgba(255,255,255,0.7); }
 footer a:hover { color: var(--white); }
 
 /* ============================================================
+   Hero stats row
+   ============================================================ */
+.stats-row {
+  display: flex;
+  gap: 28px;
+  margin: 20px 0 24px;
+  flex-wrap: wrap;
+}
+
+.stat { display: flex; flex-direction: column; }
+
+.stat-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   Awards
+   ============================================================ */
+.awards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.award-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.award-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.award-icon { font-size: 1.6rem; flex-shrink: 0; }
+
+.award-title {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.award-sub {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 640px) {
